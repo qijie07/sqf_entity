@@ -636,16 +636,14 @@ ${table.sqlStatement}'''
                 table.initialized = true;
                 print(
                     'SQFENTITIY: Table named [${table.tableName}] has initialized successfully (created table)');
-                if (checkForIsReadyDatabase(dbTables)) {
-                  return true;
-                }
                 if (alterTableIndexesQuery.isNotEmpty) {
                   await SqfEntityProvider(this)
                       .execSQLList(alterTableIndexesQuery);
                   print(
                       'SQFENTITIY: alterTableIndexesQuery => $alterTableIndexesQuery');
-                  await SqfEntityProvider(this)
-                      .execSQLList(alterTableIndexesQuery);
+                }
+                if (checkForIsReadyDatabase(dbTables)) {
+                  return true;
                 }
               } else // table can not created
               {
