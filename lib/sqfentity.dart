@@ -790,6 +790,7 @@ List<String> checkTableIndexes(SqfEntityTableBase table) {
     dynamic columns;
     bool? isUnique = false;
     String? indexName;
+    isUnique = field.isUnique ?? false;
     if (field.isIndex ?? false) {
       if (field.isIndexGroup != null) {
         columns = table.fields!
@@ -798,7 +799,6 @@ List<String> checkTableIndexes(SqfEntityTableBase table) {
             .toList();
         indexName = 'IDX_${table.tableName}_Group_${field.isIndexGroup}';
       } else {
-        isUnique = field.isUnique ?? false;
         columns = [
           '${field.fieldName}${field.collate != null ? ' COLLATE ${field.collate.toString().replaceAll('Collate.', '')}' : ''}'
         ];
