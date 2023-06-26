@@ -1,3 +1,6 @@
+## 2.3.0+6
+- fix unique id
+
 ## 2.3.0+5
 - rethrow added into rawInsert method
 
