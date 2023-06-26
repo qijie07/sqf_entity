@@ -20,7 +20,7 @@ import 'dart:async' show Future;
 import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart';
-import 'package:sqfentity/sqfentity_connection_base.dart';
+import 'package:sqf_entity_fix/sqfentity_connection_base.dart';
 import 'package:sqflite_common/sqlite_api.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:synchronized/synchronized.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sqfentity/sqfentity.dart';
+import 'package:sqf_entity_fix/sqfentity.dart';
 // STEP 1: import sqfentity package.
 import 'package:sqfentity_gen/sqfentity_gen.dart';
 
