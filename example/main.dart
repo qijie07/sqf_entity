@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sqf_entity_fix/sqfentity.dart';
 // STEP 1: import sqfentity package.
-import 'package:sqfentity_gen/sqfentity_gen.dart';
+import 'package:sqfentity_gen_fix/sqfentity_gen.dart';
 
 import 'model/model.dart'; // you do not need to import this file. Just follow next steps
 

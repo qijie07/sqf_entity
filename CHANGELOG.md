@@ -1,3 +1,6 @@
+## 2.3.1+7
+- fix dependencies
+
 ## 2.3.0+6
 - fix unique id
 
